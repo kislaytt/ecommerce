@@ -1,0 +1,61 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Raspberry Pi Devbox {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} Contact Us bg-gray-100 {% endblock body_class %}
+
+{% block content %}
+
+  {% include "includes/navigation-light.html" %}
+
+  <section class="pt-3 pt-md-5 pt-lg-7 pb-md-5 pb-lg-7">
+    <div class="container">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="card shadow-lg">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h3 class="text-white mb-0">Shipping & Returns</h3>
+            <p class="text-white opacity-8 mb-4">Last modified: Feb 01 2021</p>
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5 pt-0">
+            <h4 class="mt-5 mb-3">When your order will ship</h4>
+
+            In most cases, your order will ship within 1-2 business days. We'll send you an email when it ships along with a confirmation email that has your delivery service information and tracking number.
+
+            If part of your order isn't available for immediate shipment, your order will not ship until all items are available. You will see “Processing” if you check the status of your order online. When your order ships, the status will change to “Completed”, and you’ll receive a shipment notice with a tracking number.
+            <h4 class="mt-5 mb-3">Shipping methods and carriers that we use</h4>
+            In the EU, we offer FedEx Next Day, Second Day, and Ground shipping to physical addresses. Shipping is not available to PO boxes.
+
+            In France, we offer UPS Express and UPS Ground shipping to physical addresses (no PO Boxes).
+
+            <h4 class="mt-5 mb-3">International shipping</h4>
+            All orders placed on the Quantiota store must have the same country for the shipping and billing address.</div>      </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock content %}
+
+  <!-- Specific JS goes HERE --> 
+  {% block javascripts %}
+  
+    <script src="/static/assets/js/soft-design-system.min.js?v=1.0.1" type="text/javascript"></script>
+  
+  {% endblock javascripts %}

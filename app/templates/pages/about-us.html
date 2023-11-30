@@ -1,0 +1,54 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Raspberry Pi Devbox {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} About Us bg-gray-100 {% endblock body_class %}
+
+{% block content %}
+
+  {% include "includes/navigation-light.html" %}
+
+  <section class="pt-3 pt-md-5 pt-lg-7 pb-md-5 pb-lg-7">
+    <div class="container">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="card shadow-lg">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h3 class="text-white mb-0">About Us</h3>
+            <p class="text-white opacity-8 mb-4">Last modified: Feb 01 2021</p>
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5 pt-0">
+            <h4 class="mt-5 mb-3">Introduction</h4>
+            Welcome to Quantiota, where innovation in AI technology drives us forward. Our main product, the AI Agent Host, is designed to make AI experimentation and development easier and more efficient. It's a user-friendly platform that combines various tools to help manage data, code in real-time, and visualize results. We also specialize in language model development, particularly with our AI Agent Lab focused on advanced language models. At Quantiota, we're committed to providing simple yet powerful solutions for AI research and development, making complex technology accessible to all.
+            <h4 class="mt-5 mb-3">Mission Statement</h4>
+            Quantiota's mission is to revolutionize the field of artificial intelligence through innovative technology solutions. We aim to simplify the complexities of AI development and research, making it accessible and efficient for all. Our commitment lies in empowering advancements in AI with user-friendly, powerful tools, driving progress and discovery in the ever-evolving world of technology.
+
+            </div>
+    </div>
+  </section>
+
+  {% endblock content %}
+
+  <!-- Specific JS goes HERE --> 
+  {% block javascripts %}
+  
+    <script src="/static/assets/js/soft-design-system.min.js?v=1.0.1" type="text/javascript"></script>
+  
+  {% endblock javascripts %}
